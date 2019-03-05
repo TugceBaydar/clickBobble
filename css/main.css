@@ -1,0 +1,29 @@
+body{
+  position: relative;
+}
+
+section {
+  background-color: tomato;
+  height: 800px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  opacity: 0;
+  transform: scale(0);
+  animation: ripple 1s;
+}
+
+@keyframes ripple {
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
